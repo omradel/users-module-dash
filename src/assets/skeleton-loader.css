@@ -1,0 +1,11 @@
+.dark {
+  .v-skeleton-loader {
+    background-color: #494949;
+  }
+}
+
+.edit-user {
+  .v-skeleton-loader__text {
+    height: 15px;
+  }
+}

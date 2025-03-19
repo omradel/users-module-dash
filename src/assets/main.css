@@ -1,0 +1,89 @@
+@import "tailwindcss";
+@import "./sweet-allert.css";
+@import "./skeleton-loader.css";
+@import "./pagination.css";
+@custom-variant dark (&:where(.dark, .dark *));
+
+* {
+  padding: revert-layer;
+  margin: revert-layer;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.dark {
+  body {
+    background-color: var(--color-dark);
+  }
+}
+
+body {
+  background-color: var(--color-light);
+}
+
+@theme {
+  --color-dark: rgb(37, 39, 41);
+  --color-light: rgb(240, 241, 247);
+  --color-white: rgb(163 164 165);
+  --color-muted: rgb(140, 144, 151);
+  --color-move: rgb(132, 90, 223);
+  --color-red: rgb(230, 83, 60);
+  --color-custom-dark: rgb(26, 28, 30);
+  --color-secondry: rgb(35, 183, 229);
+  --color-warning: rgb(245, 184, 73);
+  --color-success: rgb(38, 191, 148);
+  --color-pink: rgb(231, 145, 188);
+  --color-teal: rgb(18, 194, 194);
+
+  --text-small: 0.875rem; /* 14px */
+
+  --spacing-xxs: 0.25rem; /* 4px */
+  --spacing-xs: 0.5rem; /* 8px */
+  --spacing-sm: 0.75rem; /* 12px */
+  --spacing-small: 0.875rem; /* 14px */
+  --spacing-md: 1rem; /* 16px */
+  --spacing-lg: 1.25rem; /* 20px */
+  --spacing-xl: 1.5rem; /* 24px */
+  --spacing-2xl: 2rem; /* 32px */
+  --spacing-3xl: 2.5rem; /* 40px */
+}
+
+.v-list-group__items .v-list-item {
+  padding-left: 2rem !important;
+  font-size: 0.85rem !important;
+}
+
+.v-list-item--density-compact:not(.v-list-item--nav).v-list-item--one-line {
+  border-radius: 10px !important;
+}
+
+.dark {
+  .v-navigation-drawer__content {
+    border-right: 1px solid #464646 !important;
+  }
+  .v-toolbar__content {
+    border-bottom: 1px solid #464646 !important;
+    overflow: visible !important;
+  }
+}
+
+.v-toolbar__content {
+  overflow: visible !important;
+}
+
+input {
+  font-size: 14px !important;
+  font-weight: 100;
+}
+
+.dark {
+  input,
+  select {
+    border-color: #cccccc56 !important;
+    color: var(--color-white);
+  }
+}

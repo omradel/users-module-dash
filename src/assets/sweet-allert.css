@@ -1,0 +1,10 @@
+.swal-confirm-btn {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.swal-cancel-btn {
+  background-color: var(--color-move) !important;
+  color: white !important;
+}
